@@ -56,9 +56,7 @@ def send_mail():
         LOG.info('邮件发送失败')
 
 if __name__ == '__main__':
-    if send_mail_off == 'sendmail':
-        send_mail()
-    elif send_mail_off == 'runcase':
+    if send_mail_off == 'runcase':
         test_runner()
     else:
         raise Exception('参数输入错误')
